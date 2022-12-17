@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Varijable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Promena varijabli pomoću <span class='h1'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Foto Ram:</label>
+    <!-- type ti je "range" i to znači da imaš ovaj slajder, postavio si min i max, i dodao si kao za bubnjeve data-XXX="px" -->
+    <!-- pošto u JS izvlačiš sam VALUE i ako ga ubacis u CSS varijablu onda moraš da dodaš i px.. to si postigao time što si dodao data-ŠTAGOD="px"  -->
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Zamagljenost:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+    <br>
+
+    <label for="base">Boja Rama</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+
+    <label for="pozadina">Boja pozadine</label>
+    <input id="pozadina" type="color" name="pozadina" value="#194933">
+    
+  </div>
+
+  <img src="assets/anksa.jpg">
+
+
+  <script src="code.js">
+  </script>
+
+</body>
+</html>

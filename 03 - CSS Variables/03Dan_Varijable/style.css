@@ -1,0 +1,41 @@
+:root{
+    margin: 0px;
+    padding: 0px;
+    --spacing:10px;
+    --blur:0px;
+    --base:yellow;
+    --pozadina:#194933;
+}
+
+body {
+    text-align: center;
+    background: var(--pozadina);
+    color: white;
+    font-family: 'helvetica neue', sans-ser if;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+
+.controls {
+    display: inline-block;
+    margin: 50px;
+    text-align: center;
+}
+
+input {
+    
+    width: 100px;
+    
+  }
+
+img {
+    max-width: 900px;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur)); /*moras da dodas ovde blur pa u zagradi da ti bude promenjiva */
+}
+
+.h1 {
+    color: var(--base);
+}
